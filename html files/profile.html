@@ -1,0 +1,115 @@
+<!-- work/profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css files/profile1.css">
+    <title>User Profile</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>User Profile</h2>
+    <div id="user-info">
+        <!-- User information will be displayed here -->
+    </div>
+
+    <!-- Form to update profile information -->
+    <form id="updateForm">
+        <!-- Registration Fields -->
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" disabled>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" disabled>
+        </div>
+
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" disabled>
+        </div>
+
+        <div class="input-group">
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" disabled>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" disabled>
+        </div>
+
+        <div class="input-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" disabled>
+        </div>
+
+        <!-- Additional Profile Fields -->
+        <div class="input-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob">
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="input-group">
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college">
+        </div>
+
+        <div class="input-group">
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree">
+        </div>
+
+        <div class="input-group">
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" name="mother">
+        </div>
+
+        <div class="input-group">
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father">
+        </div>
+
+        <div class="input-group">
+            <label for="caste">Caste:</label>
+            <input type="text" id="caste" name="caste">
+        </div>
+
+        <div class="input-group">
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality">
+        </div>
+
+        <!-- Profile Picture Upload -->
+        <div class="input-group">
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        </div>
+
+        <button type="submit" class="btn-primary">Update Profile</button>
+    </form>
+
+    <!-- Logout button -->
+    <button id="logoutBtn" class="btn-primary mt-3">Logout</button>
+
+    <!-- Error and success messages -->
+    <div id="error-message" class="error-message" style="display: none;"></div>
+    <div id="success-message" class="success-message" style="display: none;"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../js files/profile.js"></script>
+
+</body>
+</html>

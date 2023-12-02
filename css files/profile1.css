@@ -1,0 +1,176 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right, #ff7f0e, #2196f3, #00bcd4, #28a745);
+  animation: background-shimmer 2.5s linear infinite;
+}
+
+@keyframes background-shimmer {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile section */
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  font-size: 24px;
+  animation: profile-image-spin 2s linear infinite;
+}
+
+@keyframes profile-image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Form section */
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #212529;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #21883c;
+}
+
+/* Error and success messages */
+
+.error-message, .success-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.error-message {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+}
+
+
+/* Profile section */
+
+.container {
+  position: relative;
+}
+
+.profile-image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 24px;
+  animation: profile-image-spin 2s linear infinite;
+}
+
+@keyframes profile-image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.add-folder-btn {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
